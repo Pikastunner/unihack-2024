@@ -4,6 +4,8 @@ import Logo from 'assets/slidengo.svg';
 import RightArrow from 'assets/arrow-right.svg';
 import Splashart from 'assets/presentation.svg'
 
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <> 
@@ -11,13 +13,15 @@ export default function Hero() {
         <S.Wrapper>
           <S.Left>
             <S.Title>
-              Lecture slides for<br></br>
-              <b>everyone.</b>
+              Lecture slides for
+              <b> everyone.</b>
             </S.Title>
-            <S.CTA>
-              <p>Translate a slide, it's free</p>
-              <S.Arrow src={RightArrow} />
-            </S.CTA>
+            <Link to={'upload'}>
+              <S.CTA>
+                <p>Translate a slide, it's free</p>
+                <S.Arrow src={RightArrow} />
+              </S.CTA>
+            </Link>
           </S.Left>
           <S.Right>
             <S.Splashart src={Splashart}/>

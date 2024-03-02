@@ -11,11 +11,12 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: 20px;
 `;
 
 const CTA = styled.button`
   width: min-content;
-  gap: 2rem;
+  gap: 1rem;
   border-radius: 10px;
   background-color: #2D261F;
   color: #FFFFFF;
@@ -39,7 +40,6 @@ const Left = styled.div`
   flex: 1.2;
   gap: 1rem;
   align-self: flex-start;
-  margin-top: 20px;
 `;
 
 const Logo = styled.img`
@@ -48,7 +48,7 @@ const Logo = styled.img`
 
 const Right = styled.div`
   flex: 1;
-  margin-top: -30px;
+  margin-top: -50px;
 `;
 
 const Title = styled.h2`
